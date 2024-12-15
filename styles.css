@@ -1,0 +1,366 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    padding: 10px;
+    display: block;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap : 3px
+}
+.logo img{
+    width: 45px;
+    border-radius: 10%;
+}
+
+.logo span {
+    color: #ffffff;
+    margin: 6px;
+    
+    top: 13px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin : 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+
+}
+
+nav ul li a:hover {
+    background-color: #615f5f;
+    border-radius: 5px;
+    color: #ff4444;
+}
+
+.game_page {
+    background-image: url('media/logo_background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 78px;
+}
+
+.play-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 25px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.892);
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.play-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.game_story {
+    margin-top: 50px ;
+    margin-left: 80px;
+}
+
+.game_story h1 {
+    font-size: 80px;
+    margin: 0%;
+}
+
+.game_story p {
+    font-size: 20px;
+    text-indent: 5em;
+    margin-bottom: 120px;
+}
+
+.pic_attack {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.image-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.image-box p {
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.First-box{
+    margin-top: 180px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    justify-items: center;
+}
+
+.image-gallery figure {
+    display: flex;
+    flex-direction: column; /* จัดให้ภาพและข้อความเรียงตามแนวตั้ง */
+    align-items: center;
+    justify-content: space-between; /* ทำให้ข้อความอยู่ข้างล่าง */
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    height: 300px;
+    width: 280px;
+}
+
+.image-character {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    margin: 15px;
+}
+
+.image-gallery figcaption {
+    font-size: 18px;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.image-hat {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    margin: 15px;
+    margin-top: 40px;
+}
+
+.image-gallery-knife {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 40%;
+    justify-items:center;
+}
+
+.image-gallery-knife figure {
+    display: flex;
+    flex-direction: column; /* จัดให้ภาพและข้อความเรียงตามแนวตั้ง */
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    width: 280px;
+    height: 300px;
+}
+
+.image-gallery-knife img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    margin: 100px 15px;
+}
+
+.image-gallery-knife figcaption {
+    font-size: 18px;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.image-starter-weapon {
+    width: 170px;
+    height: auto;
+    object-fit: cover;
+    margin: 15px;
+    margin-top: 80px;
+}
+
+.image-ar-weapon {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    margin-top: 100px;
+}
+
+.image-shotgun-weapon {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    margin-top: 100px;
+}
+
+.image-sniper-weapon {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    margin-top: 100px;
+}
+
+.back_ground {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back_ground p {
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.back_ground img {
+    width: 900px;
+    margin-bottom: 30px;
+    border: 7px solid rgb(0, 0, 0);
+    border-radius: 4px;
+}
+
+.back_ground article {
+    font-size: 30px;
+    margin-bottom: 100px;
+    font-weight: bold;
+    color: black;
+}
+
+.download-file {
+    position: absolute;
+    top: 15vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: black;
+    height:80dvh;
+    width: 95vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 5vh;
+}
+
+.browser,
+.download {
+    background-color: white;
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10%;
+}
+
+.browser a,
+.download a {
+    margin-top: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.browser a:hover,
+.download a:hover {
+    color: #00ff08;
+}
+
+.browser img,
+.download img {
+    margin-top: 2vh;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 160px;
+}
+.contact figure{
+    text-align: center;
+    font-size: 20px;
+    line-height: 0.1;
+    margin-bottom: 70px;
+}
+.contact img{
+    width: 500px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.contact h2{
+    font-size: 90px;
+    margin: 0px;
+    margin-bottom: 50px;
+}
+
+.contact h1{
+    font-size: 20px;
+}
+
+.contact p{
+    font-size: 20px;
+    color: #615f5f;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        margin : 0px;
+        font-size: 1.5vh;
+    }
+}
