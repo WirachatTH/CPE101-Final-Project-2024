@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Kanit;
     margin: 0;
     padding: 0;
 }
@@ -65,15 +65,24 @@ nav ul li a:hover {
 
 .game_page {
     background-image: url('media/logo_background.png');
+    overflow: none;
     background-size: cover;
     background-position: center;
+    height: auto;
+    width: 100vw;
     height: 100vh;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 78px;
+}
+
+.game_page p {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    text-shadow: black 2px 2px 5px;
 }
 
 .play-button {
@@ -95,25 +104,31 @@ nav ul li a:hover {
 }
 
 .game_story {
-    margin-top: 50px ;
-    margin-left: 80px;
+    width: 100vw;
 }
 
 .game_story h1 {
     font-size: 80px;
     margin: 0%;
+    padding: 5%;
 }
 
 .game_story p {
     font-size: 20px;
     text-indent: 5em;
+    padding: 5%;
     margin-bottom: 120px;
 }
 
 .pic_attack {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: center;
+    width: 100vw;
+}
+
+.pic_attack img {
+    width: 15vw;
+    height: 15vw;
 }
 
 .image-box {
@@ -359,8 +374,69 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
+
+    .pic_attack img {
+        width: 25vh;
+        height: 25vh;
+    }
+
+    .game_page p {
+        color: white;
+        font-size: 1.5vh;
+        font-weight: 500;
+        text-shadow: black 2px 2px 5px;
+    }
+
     nav ul li {
         margin : 0px;
         font-size: 1.5vh;
+    }
+
+    .image-character {
+        width: 60px;
+    }
+
+    .image-hat {
+        width: 60px;
+    }
+
+    .image-gallery figure {
+        height: 120px;
+        width: 80px;
+    }
+
+    .image-gallery figure figcaption {
+        font-size: 1vh;
+    }
+
+    .image-starter-weapon {
+        width: 80px;
+    }
+    
+    .image-ar-weapon {
+        width: 80px;
+    }
+    
+    .image-shotgun-weapon {
+        width: 80px;
+    }
+    
+    .image-sniper-weapon {
+        width: 80px;
+
+    }
+    .image-gallery-knife figure {
+        width: 80px;
+        height: 120px;
+    }
+    .image-gallery-knife img {
+        width: 80px;
+    }
+    
+    .image-gallery-knife figcaption {
+        font-size: 1vh;
+    }
+    .back_ground img {
+        width: 350px;
     }
 }
